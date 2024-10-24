@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Coolshop {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'cafe/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'cafe/node_modules/bootstrap-icons/font/bootstrap-icons.css' %}">
+    {% block head %} {% endblock %}
+</head>
+<body class="container">
+    {% include 'cafe/header.html' %}
+    {% block content %}{% endblock %}
+</body>
+</html>
